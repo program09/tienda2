@@ -1,0 +1,520 @@
+/*FUENTES DE GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --backgroung-primary: rgb(237, 242, 252);
+    --color-primary: rgb(238, 243, 247);
+    --color-fondo: rgb(244, 244, 244);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+li a i {
+    width: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+
+button {
+    border: 0;
+}
+
+input {
+    outline: none;
+}
+
+/*Clases generales start*/
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.brd-1 {
+    border-radius: 10px;
+}
+
+.brd-2 {
+    border-radius: 8px;
+}
+
+.brd-3 {
+    border-radius: 5px;
+}
+
+.fit {
+    object-fit: cover;
+}
+
+.btn-transparent {
+    background-color: transparent;
+}
+
+.title-1 {
+    font-size: 30px;
+}
+
+/*Clases generales end*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/*HEADER MAIN START*/
+
+.header {
+    Width: 100%;
+    height: 50px;
+    background-color: #ffff;
+    position: fixed;
+    z-index: 9999999999;
+    box-shadow: 0px 2px 2px rgba(44, 43, 43, 0.048);
+}
+
+
+.header .header_left .logo h2 {
+    font-family: 'Alkatra', cursive;
+    color: rgb(240, 68, 68);
+}
+
+.header .header_left .search {
+    margin-left: 20px;
+}
+
+.header .header_left .search form {
+    position: relative;
+}
+
+.header .header_left .search form input {
+    min-width: 400px;
+    padding: 8px 20px 8px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--backgroung-primary);
+    font-weight: 333;
+}
+
+.header .header_left .search form button {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+
+.menu_head {
+    position: relative;
+}
+
+.menu_head li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu_head .sub_menu {
+    width: 180px;
+    position: absolute;
+    background-color: #ffff;
+    top: 45px;
+    right: 0;
+    padding: 10px 5px;
+    visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+.sub_menu li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu_head li:hover {
+    background-color: var(--backgroung-primary);
+    border-radius: 10px;
+}
+
+.menu_head li:hover .sub_menu {
+    visibility: visible;
+}
+
+#btn_search {
+    visibility: hidden;
+    position: absolute;
+}
+
+/*HEADER MAIN END*/
+
+
+
+
+/*MAIN START*/
+
+
+main {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.container_main {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.section_one {
+    width: 100%;
+
+}
+
+.search_page{
+    width: 100%;
+}
+
+.search_page form{
+    position: relative;
+}
+.search_page form input{
+    min-width: 400px;
+    padding: 8px 20px 8px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #fff;
+    font-weight: 333;
+}
+
+.search_page form button {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    color: black;
+}
+.jum_inin {
+    width: 100%;
+}
+
+.jum_inin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+    grid-gap: 10px;
+}
+
+
+.jum_inin-item {
+    background-color: #ffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(72, 71, 71, 0.051);
+}
+
+.jum_inin-item .cont_item {
+    width: 100%;
+    position: relative;
+}
+
+.jum_inin-item .cont_item .jum_in_item_img {
+    width: 100% !important;
+    height: 150px;
+}
+
+.jum_inin-item .cont_item .jum_in_item_img img {
+    width: 100% !important;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.jum_inin-item .cont_item a {
+    padding: 5px 20px;
+    background-color: rgba(65, 63, 63, 0.518);
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    color: #ffff;
+    border-radius: 5px;
+}
+
+.jum_inin-item .cont_item:hover a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    visibility: visible;
+    background-color: rgba(65, 63, 63, 0.274);
+}
+
+
+/*PRODUCTOS*/
+.grid_products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 10px;
+}
+
+
+.producto {
+    background-color: #ffff;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+.producto .producto_img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.producto_info{
+    padding: 10px 0px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+
+.producto_info .name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.producto_info .cater{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    font-weight: 444;
+}
+
+.producto_info .precio{
+    font-size: 17px;
+    padding: 10px 0px 0px 0px;
+}
+
+.producto_info .precio span{
+    color: rgb(238, 75, 75);
+    text-decoration: line-through;
+}
+
+.btn_add_car{
+    width: 100%;
+}
+.btn_add_car a{
+    display: block;
+    width: 100%;
+    text-align:center;
+    background-color: rgb(238, 86, 86);
+    padding: 6px;
+    border-radius: 8px;
+    color:#fffF !important;
+}
+
+.btn_add_car a i{
+    visibility: hidden;
+    position: absolute;
+    font-size: 14px;
+    background-color: #fff;
+    color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+}
+
+.producto:hover .btn_add_car a i{
+    visibility: visible;
+    position: relative;
+    transform: rotate(360deg);
+    transition: .6s;    
+}
+
+.producto .new{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 0 5px;
+    z-index: 99999;
+    background-color: rgb(236, 87, 87);
+    padding: 2px 10px;
+    color: #ffff;
+    font-size: 12px; 
+}
+
+.producto:hover .producto_img img{
+    transform: scale(1.1) rotate(10deg);
+    transition: .4s;
+}
+
+
+
+/*MAIN END*/
+
+
+
+.modal{
+    z-index: 9999999999 !important;
+}
+
+.modal-dialog .modal-content{
+    border: 0;
+    border-radius: 10px;
+}
+
+.modal .modal-body{
+    padding: 10px;
+    border: 0;
+}
+
+.detail_producto{
+    width: 100%;
+    display: flex;
+}
+
+.detail_producto .img_prof{
+    width: 60%;
+    height: 500px;
+}
+.detail_producto .img_prof img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ingo_detaills{
+    width: 40%;
+    padding: 10px;
+}
+
+.titulo_name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.detaill_precio{
+    font-size: 30px;
+    color: rgb(51, 50, 50);
+}
+.detaill_precio span{
+    color: rgb(238, 75, 75) !important;
+    text-decoration: line-through;
+}
+
+.modal .modal-footer{
+    border: 0;
+}
+
+.table{
+    text-align: justify;
+}
+
+
+@media screen and (max-width:1200px) {
+    .detail_producto{
+        width: 100%;
+        display:block;
+    }
+    .detail_producto .img_prof{
+        width: 100%;
+    }
+    .detail_producto .ingo_detaills{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1100px) {
+    .container_main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header .header_left .search {
+        display: none;
+    }
+
+    #btn_search {
+        visibility: visible;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container_main {
+        width: 100%;
+    }
+
+    .jum_inin-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        padding: 0px 20px;
+    }
+
+    .header .header_right .menu_head li a {
+        padding: 10px;
+    }
+
+    .header .header_right .menu_head li a span {
+        display: none;
+    }
+}
